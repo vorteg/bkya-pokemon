@@ -24,4 +24,4 @@
 
 ### Go to http://0.0.0.0:8000 or http://localhost:8000 using a browser.
 
-## More details
+## More details https://github.com/vorteg/bkya-pokemon/wiki
