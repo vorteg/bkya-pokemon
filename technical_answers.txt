@@ -1,0 +1,44 @@
+1. What are the supported data types in Python?
+It's the native data structure which python supports, here's the basic:
+- Binary Types: memoryview, bytearray, bytes
+- Boolean Type: bool
+- Set Types: frozenset, set
+- Mapping Type: dict
+- Sequence Types: range, tuple, list
+- Numeric Types: complex, float, int
+- Text Type: str
+
+2. What is the difference between tuples and lists in Python?
+The sintaxis to declarate a tuple is with (), meanwhile with the list is using [].The main difference is that Tuples are immutable, 
+and consume less space in memory and are faster during iterations.The lists are simple for insert and delete items, 
+contains several methods for the interaction with data but consumes more memory.
+
+3. What are Python decorators?
+Decorators are used in python to add more functionalities to existing methods/functions, it is pretty helpfull to reduce 
+lines of code and reuse functions.
+
+4. What are generators in Python?
+A generator is an iterator function, where with the keywords "yield", and "Next()" it is possible processing 
+ data one by one when is working with a list of data.
+
+5. What are shallow and deep copy operations?
+when working with data collections and its required to do a collection copy only the assignment statements then Python won't 
+copy the object directly, for this kind of situations the shallow copy is used or deep copy for specific data.
+
+6. Explain Dependency Injection?
+Dependency Injection is an strategic to help with the less coupling. When inside of a "class" its attributes are generated depending 
+for others objects creations. A way to solve this dependency is creating interfaces or parsing the object into constructor method, 
+avoding to create a dependant object inside the atributes statements.
+
+7. Explain how you can make a Python Script executable on Unix?
+Make the first line a shebang (#!) into the script.
+For example make this your first line:
+#!/usr/bin/env python3
+
+Then chmod your python file to make it executable:
+
+chmod 750 your-script.py
+
+To run this script if you are in the same directory as the script:
+
+./your-script.py

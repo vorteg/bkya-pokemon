@@ -1,11 +1,18 @@
 # bkya-pokemon
 
+## More details https://github.com/vorteg/bkya-pokemon/wiki
+
 ## To run App from Docker
 
 ### Create docker image
 
 `docker build -t pokeapi .`
+
+### Run docker
+
 `docker run --rm -p 8000:8000 -v $(pwd)/src:/pokeapi -it pokeapi`
+
+### Go to http://0.0.0.0:8000 or http://0.0.0.0:8000/docs using Google Chrome.
 
 ## To run App from a virtual environment
 
@@ -22,6 +29,6 @@
 `cd src`
 `uvicorn app:app`
 
-### Go to http://0.0.0.0:8000 or http://localhost:8000 using a browser.
+### Note for debug mode, from vscode only execute play in debug section, this repo contains the config files in .vscode folder.
 
-## More details https://github.com/vorteg/bkya-pokemon/wiki
+### Go to http://localhost:8000 or http://localhost:8000/docs using Google Chrome.
