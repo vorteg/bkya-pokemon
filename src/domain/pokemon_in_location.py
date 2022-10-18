@@ -60,7 +60,9 @@ class PokemonLocation(BaseModel):
                 response = session.get(f"{AREAS_URL}{item}")
                 payload = response.json()
                 results = payload.get("pokemon_encounters", [])
-                area_location = PokemonLocationArea(name=item, pokemons=results)
+                # Search 'pokemon name' for area
+                poke = [x["pokemon"]["name"] for x in results]
+                area_location = PokemonLocationArea(name=item, pokemons=poke)
                 areas_list.append(area_location.__dict__)
                 self.__get_best_location(
                     number_pokemons=len(results), name_locattion=item
